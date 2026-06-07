@@ -17,7 +17,7 @@ export const CliCommand: React.FunctionComponent<CliCommandProps> = (
   );
 
   const handleCopyCommand = () => {
-    navigator.clipboard.writeText(props.command);
+    navigator.clipboard.writeText(props.title);
     setCopyToolTipMessage("Copied");
     setTimeout(
       () => setCopyToolTipMessage(COPY_TOOL_TIP_DEFAULT_MESSAGE),
